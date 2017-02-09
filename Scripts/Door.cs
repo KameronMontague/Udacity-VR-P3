@@ -8,13 +8,11 @@ public class Door : MonoBehaviour
     // Create a boolean value called "locked" that can be checked in Update() 
 	public static bool locked = true;
 
-	//public static bool isKeyCollected = false;
 	public Animation animate;
 
 	public AudioClip mySound;
 	public AudioClip mySound2;
 	public AudioSource mySource;
-	//public Key unlock;
 
 
 
@@ -24,6 +22,8 @@ public class Door : MonoBehaviour
 	void Start() {
 		
 		animate = GetComponent<Animation> ();
+
+		locked = true;
 
 
 
